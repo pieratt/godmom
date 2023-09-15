@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=900" />
+  <link rel="stylesheet" href="../styles.css">
+  <title>Φ SUPO - Featured Image</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div id="nav"></div>
+<div class="featured-column">
+    <img class="featured-image" src="/img/supo_fatherearth_1.jpg" alt="Featured Image">
+
+    <!-- Info Columns -->
+    <div class="info-wrapper">
+      <div class="info-column">
+        <h2>Image Title</h2>
+        <p>Description of the image.</p>
+      </div>
+      <div class="buy-column">
+        <button class="buy-button">BUY</button>
+      </div>
+    </div>
+</div>
+    <div id="footer"></div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script>
+    $(function(){
+      $("#nav").load("../nav.html");
+      $("#footer").load("../footer.html");
+    });
+  </script>
+</body>
+</html>
