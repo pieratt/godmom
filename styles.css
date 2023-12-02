@@ -23,27 +23,64 @@ footer, header, hgroup, menu, nav, section {
     }
 
 body {
-    background-color: #000111;
+    background-color: #000000;
     color: #edededdd;
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: arial, sans-serif;
     overflow: auto;  /* To allow for scrolling if the content overflows */
 }
 
 .container {
     position: absolute;
+    width: 1600px;  /* Fixed width */
+    padding-bottom:100px;
+
+}
+.container_inside {
+    position:relative;
     left: 105px;
-    top: 5px;
-    width: 1200px;  /* Fixed width */
-    padding-bottom:333px;
+    width: 1500px;
+    margin: 5px 0 50px 0;
+    overflow: hidden;
+}
+.content-wrapper {
+    display: flex;
+
 }
 
+hr {
+    width: 1500px;
+    margin: 100px 0 100px 0;
+    border: 3px double #616161;
+
+}
+.fatherearth {}
+.fatherearth_words {}
+.vision {}
+
+.column_half {
+    float:left;
+    width: 750px;  /* Fixed width */
+    padding-right: 50px;
+
+}
+.column_third {
+    width: 450px;  /* Fixed width */
+    padding-right: 50px;
+    float:left;
+}
+.featured_column {
+    width: 1000px;  /* Fixed width */
+    padding: 100px 0 0 100px;
+}
 .nav {
     position: fixed;
     left: 5px;
+    top:5px;
     font-size:16px;
     color: #edededdd;
+        line-height: 1.25em;
 }
 .footer {
     position: fixed;
@@ -52,69 +89,31 @@ body {
     font-size:16px;
     color: #edededdd;
 }
-.title {
-    width:1050px;
-    padding: 80px 0 20px 100px;
-
-}
-.content-wrapper {
-    display: flex;
-
+p {
+    font-size: 18px;
+    line-height: 1.25em;
+    padding-bottom: 26px;
+    text-align:left;
 }
 
-.text-column {
-    width: 500px;  /* Fixed width */
-    padding: 0px 0 0 100px;
+p::selection {
+  color: rgb(14, 14, 14);
+  background: rgb(196, 103, 189);
 }
-.featured-column {
-    width: 1200px;  /* Fixed width */
-    padding: 100px 0 0 100px;
-}
-.image-column {
-    width: 500px;  /* Fixed width */
-    margin-left: 40px;
 
-    opacity: 100%;
-
+a {
+    text-decoration:underline;
+    color:inherit;
 }
-.image-column:hover {
-    opacity: 100%; 
-    transition: 1s;
+a:hover {
+    text-decoration:underline;
 }
 img {
-    border-radius: 5px;
-
-}
-.image-column img {
-float:left;
-    width: 500px;  /* Fixed width */
+    width: 100%;  /* Fixed width */
     height: auto;  /* Maintains aspect ratio */
     margin : 0 0 40px 0;
     border-radius: 5px;
 }
-.text-column img {
-    width: 100%;  /* Fixed width */
-    height: auto;  /* Maintains aspect ratio */
-    margin : 5px 0 30px 0;
-    border-radius: 5px;
-}
-.image-column img:hover {
-
-    opacity: 100%;
-}
-/*.image-column p {
-    font-family: 'Gowun Batang', serif;
-    font-size: 16px;
-    line-height: 1.5em;
-    padding-bottom: 26px;
-    color: #9e9e9e;
-} */
-.price {
-    float:right; 
-    color: rgb(53, 117, 53);
-
-}
-
 .yellow {
     color:rgb(169, 140, 108);
 }
@@ -132,8 +131,8 @@ float:left;
     height: auto;
 }
 sup {
-    vertical-align: super;
-    font-size: smaller;
+    font-size: 16px;
+    color:gray;
   }
 .footnote {
     color:rgb(157, 157, 157);
@@ -167,24 +166,6 @@ h3 {
     margin: 0 0 30px 0;
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.55em;
-    padding-bottom: 26px;
-}
-
-p::selection {
-  color: rgb(14, 14, 14);
-  background: rgb(196, 103, 189);
-}
-
-a {
-    text-decoration:underline;
-    color:inherit;
-}
-a:hover {
-    text-decoration:underline;
-}
 .pullquote {
     color:rgb(153, 132, 201);
 }
@@ -255,11 +236,6 @@ a:hover {
     font-size:12px;
     text-transform: uppercase;
     float:right;
-}
-hr {
-    clear: both;
-    border: 1px inset #ccc;
-    margin-bottom: 20px;
 }
 
 
@@ -392,50 +368,3 @@ table a:active {
     text-decoration:underline;
 }
 
-/* Lightbox */
-.hidden {
-    display: none;
-  }
-  
-  #lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    z-index: 1000;
-  }
-  
-  .lightbox-content {
-    position: absolute;
-    top: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  #lightbox-image {
-    width: 666px;
-    max-height: calc(100vh - 400px);
-    object-fit: contain;
-  }
-  
-  .lightbox-navigation button {
-    cursor: pointer;
-    margin: 5px;
-  }
-  .lightbox-nav {
-    font-size: 24px; 
-    position: absolute;
-    bottom: 10px;
-    cursor: pointer;
-  }
-  
-  .lightbox-prev {
-    left: 10px;
-  }
-  
-  .lightbox-next {
-    right: 10px;
-  }
-  
