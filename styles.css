@@ -33,28 +33,16 @@ body {
 }
 
 .container {
-    position: relative; /* Changed from absolute to relative */
-    max-width: 1600px; /* Maximum width */
-    width: 100%; /* Adjust this percentage based on your design requirement */
-    margin-left: auto; /* Auto margin for center alignment */
-    margin-right: auto; /* Auto margin for center alignment */
+    position: relative;
+    width: 1600px; /* Fixed width - adjust as needed */
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 100px;
 
+
+
 }
 
-.container_inside {
-    position: relative;
-    width: 100%; /* Make it 100% of the container */
-    margin: 5px 0 50px 0;
-    overflow: hidden;
-}
-.container_inside {
-    position:relative;
-    left: 105px;
-    width: 1500px;
-    margin: 5px 0 50px 0;
-    overflow: hidden;
-}
 .content-wrapper {
     display: flex;
 
@@ -113,12 +101,11 @@ p::selection {
 }
 
 a {
-    text-decoration:none;
-    color:inherit;
+
 }
 
 a:hover {
-    text-decoration:underline;
+    text-decoration:none;
 }
 img {
     width: 100%;  /* Fixed width */
@@ -164,7 +151,7 @@ h2 {
     margin: 0 0 10px 0;
 }
 h1 a, h2 a {
-    text-decoration:none;
+
 }
 
 h3 {
@@ -221,14 +208,15 @@ h3 {
     background: linear-gradient(180deg, #e1e1e10d 50%,#ffffff78 99%);
 }
 .button {
-    border: 2px outset #ccc;
+
     border-radius:10px;
     display:block; 
     width:100%; 
     text-align:center; 
     padding:10px 0; 
     margin: 0 0 10px;
-    color:#636363; 
+    color:#afafaf; 
+    background-color: #334455;
 }
 .pill_draft {
     background-color:#d2d2d2;
@@ -270,10 +258,11 @@ button {
     display:block; 
     width:100%; 
     text-align:center; 
-    cursor:pointer;
+
     padding:10px 0; 
     margin: 0 0 10px;
     color:#656565; 
+    background-color:#334455;
 }
 button:hover {
     border: 1px outset #999999;
