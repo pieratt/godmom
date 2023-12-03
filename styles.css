@@ -38,9 +38,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100px;
-
-
-
+    padding: 0px 20px;
 }
 
 .content-wrapper {
@@ -61,16 +59,21 @@ hr {
 .column_half {
     float:left;
     width: 700px;  /* Fixed width */
-    padding-right: 50px;
+    padding-right: 40px;
 }
 .column_third {
     width: 450px;  /* Fixed width */
-    padding-right: 50px;
+    padding-right: 40px;
     float:left;
 }
 .column_twothirds {
     width: 950px;  /* Fixed width */
-    padding-right: 50px;
+    padding-right: 40px;
+    float:left;
+}
+.column_quarter {
+    width: 345px;  /* Fixed width */
+    padding-right: 40px;
     float:left;
 }
 .featured_column {
@@ -81,14 +84,17 @@ hr {
     position: fixed;
     left: 5px;
     top:5px;
-    color: #ffffff82;
+    font-size:14px;
+    position:fixed;
+    z-index:2;
+}
+.footer a, .nav a {
+    color: #ffffff48;
 }
 .footer {
     position: fixed;
     left: 5px;
     bottom:5px;
-
-    color: #edededdd;
 }
 p {
     padding-bottom: 26px;
@@ -101,8 +107,9 @@ p::selection {
 }
 
 a {
-
+    color: inherit;
 }
+a:visited {color:inherit;}
 
 a:hover {
     text-decoration:none;
@@ -210,13 +217,11 @@ h3 {
 .button {
 
     border-radius:10px;
-    display:block; 
-    width:100%; 
     text-align:center; 
-    padding:10px 0; 
+    padding:10px 30px; 
     margin: 0 0 10px;
     color:#afafaf; 
-    background-color: #334455;
+    background-color: #4c1c50;
 }
 .pill_draft {
     background-color:#d2d2d2;
@@ -308,8 +313,9 @@ li {
 }
   
 table {
-    color:#333;
+    color:#e1e1e1;
     width: 100%;
+    font-size:14px;
 }
 
 
@@ -355,15 +361,15 @@ th, td {
 }
 
 table a {
-    color: black;
+    color: rgb(206, 206, 206);
     text-decoration:underline;
 }
 table a:hover {
-    color:black;
+    color:rgb(157, 157, 157);
     text-decoration:underline;
 }
 table a:active {
-    color:black;
+    color:rgb(204, 204, 204);
     text-decoration:underline;
 }
 
