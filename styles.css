@@ -58,7 +58,12 @@ body {
     }
 
 
-}
+.hidden {display: none;}
+.logo-row img {width:100%;}
+.merch {width:100%;}
+.merch:hover .visible {display: none;}
+.merch:hover .hidden {display: block;}
+
 .fatherearth {}
 .fatherearth_words {}
 .vision {}
